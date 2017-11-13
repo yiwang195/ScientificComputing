@@ -1,0 +1,11 @@
+rlcabb,category
+CR,Critically endangered
+DD,Data deficient
+EN,Endangered
+EX,Extinct
+LC,Least concern
+LR/cd,Lower Risk/Critically endangered
+LR/lc,Lower Risk/Least concern
+LR/nt,Lower Risk/Near threatened
+NT,Near threatened
+VU,Vulnurable
