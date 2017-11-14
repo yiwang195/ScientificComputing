@@ -1,4 +1,3 @@
 #Ignore Python notebook checkpoints
 notebooks/.ipynb_checkpoints/*
-scripts/*
-PandasDemos/*
+GeoPandas/.ipynb_checkpoints/*
