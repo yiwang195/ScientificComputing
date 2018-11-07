@@ -1,79 +1,80 @@
-# ScientificComputing
-Exercises for learning scientific computing techniques.
+---
+Title: ENV859 - Scientific computing
+Author: John Fay
+Date: Fall 2018
+---
 
-### Day 1: NumPy
+# Scientific Computing, Python, and GIS
 
-### Day 2: Pandas
+## Introduction
 
-#### 04 - Getting started with Pandas
+Scientific computing (also called computational science) is all about how we humans can leverage computers to answer questions that we couldn't without them. GIS, in fact, is a good example of scientific computing as it allows us to study and analyze features across space that hard copy maps simply couldn't reveal on their own. 
 
-- [ ] Reading data in to a dataFrame (read_csv)
-      - [ ] Skipping rows
-      - [ ] Setting an index column
-      - [ ] Setting header names
-      - [ ] What to do with no data
-- [ ] Displaying dataFrame properties
-      - [ ] showing the full dataFrame in Jupyter
-      - [ ] dtypes
-      - [ ] columns
-      - [ ] shape
-      - [ ] len()
-      - [ ] head()/tai()l/sample() 
-- [ ] Generating Counts and Lists
-      - [ ] Extracting a column of data --> series
-      - [ ] Listing unique values within a series: `unique()`
-      - [ ] Counting unique values within a series: `nunique`
-      - [ ] Computing summary statistics: all with `describe()` and individual stats
-- [ ] Grouping data in Pandas
-      - [ ] `groupby()` function on dataFrames
-      - [ ] computing statistics on DataFrameGroupBy objects
-            - [ ] All columns...
-            - [ ] Select columns...
-- [ ] Creating summary counts in Pandas
-      - [ ] `groupby` the variable we want
-      - [ ] `agg`regate using the `count` function
-      - [ ] optionally: supply a single value in the *grouped* column to count just those values
+Scientific computing as a discipline has been active for several decades, but it has become extremely hot in the past few years, driven by convergence of several interesting trends each relating to data. First, data collectors are everywhere: from smart phones, to security cameras, to internet-enabled appliances, to swipe cards and RFIDs. Second, data storage is cheap and getting cheaper. Third, network connectivity is penetrating more and more of our globe. And fourth, computing power to process all these data keeps growing. All this means that we are flooded with data, data that could answer many interesting and relevant questions, but only if we knew how to sift, sort, summarize, transform, analyze, and synthesize the data into meaningful chunks of actionable information - i.e., the domain of scientific computing. 
 
-#### 05 - Pandas and SQL
+Another reason scientific computing has exploded in popularity is that the tools of the trade have become more accessible to the casual user. First, personal computers are as powerful as the supercomputers of yesterday, and if those machines don't cut it, we can rent vast computing power via services such as Google Cloud, Microsoft Azure, Amazon Web Services or SalesForce.com. And furthermore, scripting languages such as R and Python have become powerful, but fairly easy to use data analysis platforms - much in part to some key packages a few sharp developers have provided. 
 
-- [ ] Objectives: 
-      - [ ] Compare Pandas to Access/SQL
-      - [ ] Learn more about how Pandas can query/subset data
-- [ ] Reading in the data
-      - [ ] setting the index
-      - [ ] overriding default dtypes
-      - [ ] converting dates
-- [ ] Exploring the dataFrame
-      - [ ] Listing unique values
-- [ ] Selecting columns
-      - [ ] Single columns --> series object
-      - [ ] Multiple columns --. dataFrame *view*
-- [ ] Selecting rows
-      - [ ] Creating row masks
-      - [ ] Applying row masks
-      - [ ] Substring queries
-      - [ ] Lambda queries
-- [ ] Grouping and aggregating data
-      - [ ] groupby command
-- [ ] Joining tables
-      - [ ] `merge` command
-      - [ ] join types with `how`
-      - [ ] specifying join columns or indices
+And that leads us to the topic of this session: for us to capitalize on this "data revolution", we need to learn the key tools for doing data analysis - that is tools to collect, store, manage, summarize, combine, transform, and visualize data - that exist in Python. Fortunately, just a few packages take us a long way towards that end. These include: NumPy, Pandas, Xarray, MatPlotlib, and SciPy.
 
-#### 06 - Sara Redux
+This document describes each of these Python packages in enough detail to get you familiar with what it does and then points to a number of Jupyter notebooks with some hands-on exercises. 
 
-- [ ] Objectives:
-      - [ ] Of task: Supply date and LC filter; return locations where criteria was met
-      - [ ] To learn: Understanding data query and extraction in Pandas
-- [ ] Reading in the data
-      - [ ] Skipping comment lines
-      - [ ] Overriding the default delimiter
-      - [ ] Setting the index
-      - [ ] Specifying data types
-- [ ] Subsetting using masks
-      - [ ] Date mask
-      - [ ] LC mask
-      - [ ] Applying the mask
-- [ ] Returning results
+---
 
-#### 
+## *NumPy*
+
+### What is NumPy?
+
+- Provides a new data type - the array - which can greatly speed up certain computations.
+  - <u>Example</u>: BMI from height and weight lists (`00-Intro-to-NumPy.ipynb`)
+  - <u>Intro</u>: A quick glimpse into NumPy's *ndarray* data type (`01-NumPy-101.ipynb`)
+- Incorporated into ArcGIS now as it provides useful (and fast) tabular analysis
+  - <u>Example</u>: NC HUCs (`02-Numpy-with-FeatureClasses.ipynb`)
+- Converting rasters to NumPy arrays also allows for analysis beyond ArcGIS/ArcPy
+  - <u>Example</u>: DEM -> NumPy array -> Computing TPI (`03-Using-NumPy-With-Rasters.ipynb`)
+
+### More on NumPy
+
+- https://jakevdp.github.io/PythonDataScienceHandbook/index.html#2.-Introduction-to-NumPy
+- http://www.scipy-lectures.org/intro/numpy/index.html
+
+### Overall...
+
+- Numpy is all about arrays, i.e., dimensional data
+- It offers easy ways to 
+- Numpy is useful, but spend more time on Pandas...
+
+------
+
+## *Pandas* 
+
+### What is Pandas?
+
+- The "Swiss army knife" of data manipulation in Python. 
+
+- Like NumPy, adds a new data type to Python: the **data frame**
+- DataFrames are often compared to spreadsheets or database tables: rows and columns
+  - All values in a column are of the same data type
+  - Each row has a unique index value
+  - Thus we can reference each row by its index and each column by its name
+- With data in a data frame, Pandas has the tools to:
+  - sort, transform, pivot, melt data
+  - subset/select/query specific row and or columns
+  - compute summary stats
+  - aggregate and join 
+  - plot data
+- Examples/Notebooks:
+  - Diving in: (`10-Getting-to-know-Pandas.ipynb`)
+  - Pandas and SQL (`11-Pandas-SQL.ipynb`) & (`12-Pandas-and-SQL-2.ipynb`)
+
+### More on Pandas
+
+- https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html
+- https://www.datacamp.com/courses/pandas-foundations
+- http://nbviewer.jupyter.org/github/justmarkham/pandas-videos/blob/master/pandas.ipynb
+
+### Overall
+
+While NumPy is an essential component for data analysis in Python, Pandas is likely more useful for every data tasks. It's DataFrame and other programming classes and functions are well organized and logically written. It does take a bit of time to get comfortable with all that it can do, especially if you are use to the visual learning that goes with desktop applications like Excel, but the more you stick with it, the more you'll see that Pandas can do - especially alongside all the other magnificent data packages being crafted for Python every day. 
+
+---
+
