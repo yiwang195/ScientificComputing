@@ -1,7 +1,7 @@
 ---
 Title: ENV859 - Scientific computing
 Author: John Fay
-Date: Fall 2018
+Date: Fall 2019
 ---
 
 # Scientific Computing, Python, and GIS
@@ -36,6 +36,7 @@ This document describes each of these Python packages in enough detail to get yo
 
 - https://jakevdp.github.io/PythonDataScienceHandbook/index.html#2.-Introduction-to-NumPy
 - http://www.scipy-lectures.org/intro/numpy/index.html
+- https://jalammar.github.io/visual-numpy/
 
 ### Overall...
 
