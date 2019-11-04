@@ -1,3 +1,6 @@
 #Ignore Python notebook checkpoints
 notebooks/.ipynb_checkpoints/*
 GeoPandas/.ipynb_checkpoints/*
+
+#Ignore large datset 
+data/DuplinCostStack.npy
