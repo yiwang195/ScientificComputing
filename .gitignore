@@ -2,5 +2,9 @@
 notebooks/.ipynb_checkpoints/*
 */.ipynb_checkpoints/*
 
-#Ignore large datset 
-data/DuplinCostStack.npy
+#Ignore large datsets
+*.npy
+
+#Ingore pipe demo files
+PipeDemo/scripts/.ipynb_checkpoints/*
+PipeDemo/importLog
