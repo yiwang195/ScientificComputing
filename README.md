@@ -1,7 +1,7 @@
 ---
 Title: ENV859 - Scientific computing
 Author: John Fay
-Date: Fall 2019
+Date: Fall 2020
 ---
 
 # Scientific Computing, Python, and GIS
@@ -14,9 +14,15 @@ Scientific computing as a discipline has been active for several decades, but it
 
 Another reason scientific computing has exploded in popularity is that the tools of the trade have become more accessible to the casual user. First, personal computers are as powerful as the supercomputers of yesterday, and if those machines don't cut it, we can rent vast computing power via services such as Google Cloud, Microsoft Azure, Amazon Web Services or SalesForce.com. And furthermore, scripting languages such as R and Python have become powerful, but fairly easy to use data analysis platforms - much in part to some key packages a few sharp developers have provided. 
 
-And that leads us to the topic of this session: for us to capitalize on this "data revolution", we need to learn the key tools for doing data analysis - that is tools to collect, store, manage, summarize, combine, transform, and visualize data - that exist in Python. Fortunately, just a few packages take us a long way towards that end. These include: NumPy, Pandas, Xarray, MatPlotlib, and SciPy.
+And that leads us to the topic of this session: for us to capitalize on this "data revolution", we need to learn the key tools for doing data analysis - that is tools to collect, store, manage, summarize, combine, transform, and visualize data - that exist in Python. Fortunately, just a few packages take us a long way towards that end. These include: *NumPy*, Pandas, *Xarray*, MatPlotlib, and *SciPy*.
 
-This document describes each of these Python packages in enough detail to get you familiar with what it does and then points to a number of Jupyter notebooks with some hands-on exercises. 
+This document describes these Python packages in enough detail to get you familiar with what it does and then points to a number of Jupyter notebooks with some hands-on exercises. 
+
+| Topic    | Learning Objectives                                          |
+| -------- | ------------------------------------------------------------ |
+| 1. NumPy | • Explain the difference between a Python list and a **Numpy vector** <br />• Create **Numpy arrays** of various shapes, sizes, & values <br />• **Compute statistics** on NumPy arrays <br />• **Convert a raster to a NumPy array** using ArcPy & Rasterio <br />• Create **stacked arrays** <br />• **Convert arrays & stacked arrays back to rasters** using ArcPy & Rasterio |
+
+
 
 ---
 
