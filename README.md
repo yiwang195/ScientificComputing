@@ -18,11 +18,12 @@ And that leads us to the topic of this session: for us to capitalize on this "da
 
 This document describes these Python packages in enough detail to get you familiar with what it does and then points to a number of Jupyter notebooks with some hands-on exercises. 
 
-| Topic    | Learning Objectives                                          |
-| -------- | ------------------------------------------------------------ |
-| 1. NumPy | • Explain the difference between a Python list and a **Numpy vector** <br />• Create **Numpy arrays** of various shapes, sizes, & values <br />• **Compute statistics** on NumPy arrays <br />• **Convert a raster to a NumPy array** using ArcPy & Rasterio <br />• Create **stacked arrays** <br />• **Convert arrays & stacked arrays back to rasters** using ArcPy & Rasterio |
-
-
+| Topic                       | Learning Objectives                                          |
+| --------------------------- | ------------------------------------------------------------ |
+| 1. NumPy & NumPy Arrays     | • Explain **NumPy's usefulness** in the Python coding world<br />• Describe the difference between a Python list and a **Numpy vector** <br />• Create **Numpy arrays** of various shapes, sizes, & values <br />• **Compute statistics** on NumPy arrays <br />• **Convert a feature class to a Numpy array** using ArcPy<br />• **Convert a raster to a NumPy array** using ArcPy <br />• Explain what a **stacked array** is an how it can be useful in spatial analysis |
+| 2. Exploring Data in Pandas | • Describe the basic form of a Pandas dataframe<br />• Load data from a CSV file into a dataframe<br />• View and inspect data/dataframe properties<br />• Select columns from a dataframe<br />• Generate descriptive statistics from data in a dataframe<br />• Create some basic plots in Pandas |
+| 3. Data Analysis in Pandas  | • Calculating and updating fields<br/>• Selecting data in a dataframe<br/>   -    Selecting single rows, select rows, or row slices using `iloc`<br/>   -    Selecting rows and columns using `iloc`<br/>   -    Selecting rows and columns using `loc`<br/>   -   Selecting rows based on criteria - using *queries*<br/>   -   Selecting rows based on criteria - using *masks*<br/>   -   Updating values in selected rows/columns<br/>• Grouping and aggregating data in a dataframe<br />• Transforming data with Pivot Tables |
+| 4. Quick Plots with Pandas  | • Brief overview of plotting using Pandas                    |
 
 ---
 
@@ -69,9 +70,6 @@ This document describes these Python packages in enough detail to get you famili
   - compute summary stats
   - aggregate and join 
   - plot data
-- Examples/Notebooks:
-  - Diving in: (`10-Getting-to-know-Pandas.ipynb`)
-  - Pandas and SQL (`11-Pandas-SQL.ipynb`) & (`12-Pandas-and-SQL-2.ipynb`)
 
 ### More on Pandas
 
