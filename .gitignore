@@ -8,3 +8,6 @@ notebooks/.ipynb_checkpoints/*
 #Ingore pipe demo files
 PipeDemo/scripts/.ipynb_checkpoints/*
 PipeDemo/importLog
+
+#Ignore spatial data frames, for now
+3-SpatialDataFrames/*
